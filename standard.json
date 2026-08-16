@@ -129,7 +129,7 @@
       ],
       "summary": "Reduce air movement between attached housing units. Stringency tightens at higher tiers (ACH50 thresholds differ for new construction vs. renovation).",
       "specification": null,
-      "scope": "Air leakage between adjoining dwelling units in attached housing \u2014 duplex, townhouse, multifamily, ADU sharing a wall. Single-family detached homes are exempt.",
+      "scope": "Air leakage between adjoining dwelling units in attached housing — duplex, townhouse, multifamily, ADU sharing a wall. Single-family detached homes are exempt.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -179,7 +179,7 @@
         },
         {
           "level": "platinum",
-          "summary": "DOE Home Energy Score of 10 (existing) \u2014 or 17.5 MBtu/year (new construction)"
+          "summary": "DOE Home Energy Score of 10 (existing) — or 17.5 MBtu/year (new construction)"
         }
       ],
       "countsTowardBadges": [
@@ -200,7 +200,7 @@
       "appliesTo": [],
       "summary": "Cooling equipment sized per ACCA Manual J 8th Edition (or equivalent load calculation).",
       "specification": null,
-      "scope": "All air-conditioning and heat-pump equipment installed for space cooling \u2014 central, mini-split, and packaged systems.",
+      "scope": "All air-conditioning and heat-pump equipment installed for space cooling — central, mini-split, and packaged systems.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -236,7 +236,7 @@
       "appliesTo": [],
       "summary": "Space heating is all-electric or dual-fuel/hybrid. (At Platinum, all-electric only.)",
       "specification": null,
-      "scope": "The primary space-heating system \u2014 central heat pump, ducted air handler, mini-split, or hydronic system.",
+      "scope": "The primary space-heating system — central heat pump, ducted air handler, mini-split, or hydronic system.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -284,7 +284,7 @@
       "appliesTo": [],
       "summary": "Cooking appliances are all-electric.",
       "specification": null,
-      "scope": "All primary cooking appliances in the dwelling \u2014 cooktop, range, oven, wall oven, microwave-convection. Outdoor grills and supplementary appliances (toaster oven, slow cooker) are excluded.",
+      "scope": "All primary cooking appliances in the dwelling — cooktop, range, oven, wall oven, microwave-convection. Outdoor grills and supplementary appliances (toaster oven, slow cooker) are excluded.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -412,9 +412,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Bath fans exhaust to the outdoors (verified with a toilet-paper test). Silver and above must also test to \u2265 50 CFM per bathroom.",
+      "summary": "Bath fans exhaust to the outdoors (verified with a toilet-paper test). Silver and above must also test to ≥ 50 CFM per bathroom.",
       "specification": null,
-      "scope": "Exhaust fans in every bathroom \u2014 full bath, half-bath, and powder rooms with a permanent water source.",
+      "scope": "Exhaust fans in every bathroom — full bath, half-bath, and powder rooms with a permanent water source.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -434,7 +434,7 @@
       "appliesTo": [],
       "summary": "Either install an electric stove, or have a range hood that is tested to vent at least 100 CFM to the outdoors.",
       "specification": null,
-      "scope": "The kitchen cooking surface. Choose one of the two compliance paths \u2014 electric stove (eliminates combustion) or vented range hood (removes combustion products if gas is used).",
+      "scope": "The kitchen cooking surface. Choose one of the two compliance paths — electric stove (eliminates combustion) or vented range hood (removes combustion products if gas is used).",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -454,7 +454,7 @@
       "appliesTo": [],
       "summary": "All gas appliances and piping inspected for leaks. No leaks permitted; repair or replace before certification.",
       "specification": null,
-      "scope": "All natural-gas and propane plumbing inside the dwelling \u2014 supply piping, fittings, appliance connections, and shutoff valves.",
+      "scope": "All natural-gas and propane plumbing inside the dwelling — supply piping, fittings, appliance connections, and shutoff valves.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -472,7 +472,7 @@
       "appliesTo": [],
       "summary": "CO leak test performed on all combustion-based appliances. Repair or replace any appliance that fails.",
       "specification": null,
-      "scope": "All combustion-based appliances in the dwelling \u2014 furnace, boiler, water heater, gas range/oven, gas dryer, and gas fireplace.",
+      "scope": "All combustion-based appliances in the dwelling — furnace, boiler, water heater, gas range/oven, gas dryer, and gas fireplace.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -526,9 +526,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "If a combustion fireplace exists: seal, vent, provide makeup air, and install a CO detector. (At Platinum, no combustion fireplaces indoors \u2014 electric only.)",
+      "summary": "If a combustion fireplace exists: seal, vent, provide makeup air, and install a CO detector. (At Platinum, no combustion fireplaces indoors — electric only.)",
       "specification": null,
-      "scope": "Any combustion-based fireplace (wood, gas, pellet) installed in the dwelling \u2014 both new and existing.",
+      "scope": "Any combustion-based fireplace (wood, gas, pellet) installed in the dwelling — both new and existing.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -546,7 +546,7 @@
       "appliesTo": [],
       "summary": "A whole-house mechanical fresh-air supply system is provided.",
       "specification": null,
-      "scope": "Continuous or intermittent mechanical ventilation that supplies outdoor air to the dwelling \u2014 separate from spot ventilation (bath fans, kitchen hood).",
+      "scope": "Continuous or intermittent mechanical ventilation that supplies outdoor air to the dwelling — separate from spot ventilation (bath fans, kitchen hood).",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -564,9 +564,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Any new gas appliances are sealed-combustion / vented to the outdoors \u2014 or the project goes all-electric.",
+      "summary": "Any new gas appliances are sealed-combustion / vented to the outdoors — or the project goes all-electric.",
       "specification": null,
-      "scope": "All NEW gas appliances installed in the dwelling \u2014 furnace, boiler, water heater, dryer, fireplace.",
+      "scope": "All NEW gas appliances installed in the dwelling — furnace, boiler, water heater, dryer, fireplace.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -604,7 +604,7 @@
       "appliesTo": [],
       "summary": "A balanced (supply + exhaust) fresh-air system is installed and tested.",
       "specification": null,
-      "scope": "Mechanical ventilation system delivering balanced supply and exhaust airflow \u2014 HRV (heat recovery ventilator) or ERV (energy recovery ventilator).",
+      "scope": "Mechanical ventilation system delivering balanced supply and exhaust airflow — HRV (heat recovery ventilator) or ERV (energy recovery ventilator).",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -622,7 +622,7 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "RESET-certified air-quality sensor installed in the main living area or ducts. (At Platinum, sensor measures CO\u2082, TVOC, humidity, temp, and PM2.5.)",
+      "summary": "RESET-certified air-quality sensor installed in the main living area or ducts. (At Platinum, sensor measures CO₂, TVOC, humidity, temp, and PM2.5.)",
       "specification": null,
       "scope": "Continuous indoor air-quality monitoring in the dwelling.",
       "requirements": null,
@@ -663,9 +663,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Whole-home dehumidification / humidification provided where appropriate by climate (target 40\u201350\u00b0F dewpoint).",
+      "summary": "Whole-home dehumidification / humidification provided where appropriate by climate (target 40–50°F dewpoint).",
       "specification": null,
-      "scope": "Whole-home humidity management \u2014 dehumidification in cooling season, humidification in heating season, as appropriate to climate.",
+      "scope": "Whole-home humidity management — dehumidification in cooling season, humidification in heating season, as appropriate to climate.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -710,19 +710,19 @@
       "byLevel": [
         {
           "level": "certified",
-          "summary": "\u2264 2.2 GPM average \u2014 or Home Water Score of 2"
+          "summary": "≤ 2.2 GPM average — or Home Water Score of 2"
         },
         {
           "level": "silver",
-          "summary": "\u2264 2.0 GPM average \u2014 or Home Water Score of 3"
+          "summary": "≤ 2.0 GPM average — or Home Water Score of 3"
         },
         {
           "level": "gold",
-          "summary": "\u2264 1.5 GPM average \u2014 or Home Water Score of 5"
+          "summary": "≤ 1.5 GPM average — or Home Water Score of 5"
         },
         {
           "level": "platinum",
-          "summary": "\u2264 1.25 GPM average \u2014 or Home Water Score of 6"
+          "summary": "≤ 1.25 GPM average — or Home Water Score of 6"
         }
       ],
       "countsTowardBadges": [
@@ -748,19 +748,19 @@
       "byLevel": [
         {
           "level": "certified",
-          "summary": "\u2264 2.0 GPM average \u2014 or Home Water Score of 2"
+          "summary": "≤ 2.0 GPM average — or Home Water Score of 2"
         },
         {
           "level": "silver",
-          "summary": "\u2264 1.75 GPM average \u2014 or Home Water Score of 3"
+          "summary": "≤ 1.75 GPM average — or Home Water Score of 3"
         },
         {
           "level": "gold",
-          "summary": "\u2264 1.0 GPM average \u2014 or Home Water Score of 5"
+          "summary": "≤ 1.0 GPM average — or Home Water Score of 5"
         },
         {
           "level": "platinum",
-          "summary": "\u2264 0.5 GPM average \u2014 or Home Water Score of 6"
+          "summary": "≤ 0.5 GPM average — or Home Water Score of 6"
         }
       ],
       "countsTowardBadges": [
@@ -786,19 +786,19 @@
       "byLevel": [
         {
           "level": "certified",
-          "summary": "< 1.6 GPF average \u2014 or Home Water Score of 2"
+          "summary": "< 1.6 GPF average — or Home Water Score of 2"
         },
         {
           "level": "silver",
-          "summary": "< 1.3 GPF average \u2014 or Home Water Score of 3"
+          "summary": "< 1.3 GPF average — or Home Water Score of 3"
         },
         {
           "level": "gold",
-          "summary": "\u2264 1.0 GPF average \u2014 or Home Water Score of 5"
+          "summary": "≤ 1.0 GPF average — or Home Water Score of 5"
         },
         {
           "level": "platinum",
-          "summary": "< 1.0 GPF average \u2014 or Home Water Score of 6"
+          "summary": "< 1.0 GPF average — or Home Water Score of 6"
         }
       ],
       "countsTowardBadges": [
@@ -916,7 +916,7 @@
       "appliesTo": [],
       "summary": "Where well water is the supply, use an on-demand softener.",
       "specification": null,
-      "scope": "Dwellings on well water with measured hardness above 7 grains per gallon (gpg) or 120 mg/L as CaCO\u2083.",
+      "scope": "Dwellings on well water with measured hardness above 7 grains per gallon (gpg) or 120 mg/L as CaCO₃.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -932,7 +932,7 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Hot-water delivery passes the advanced test: \u2264 0.6 gallons before delivery and +10\u00b0F temperature rise.",
+      "summary": "Hot-water delivery passes the advanced test: ≤ 0.6 gallons before delivery and +10°F temperature rise.",
       "specification": null,
       "scope": "Hot-water distribution from the water heater (or recirculation manifold) to the farthest hot-water fixture in the home.",
       "requirements": null,
@@ -954,7 +954,7 @@
       "appliesTo": [],
       "summary": "Real-time water leak detection and metering system installed.",
       "specification": null,
-      "scope": "Whole-home plumbing \u2014 the system must monitor the entire supply line for unusual flow patterns indicative of a leak.",
+      "scope": "Whole-home plumbing — the system must monitor the entire supply line for unusual flow patterns indicative of a leak.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -976,7 +976,7 @@
       "appliesTo": [],
       "summary": "Inspect roof condition, flashing, gutters, siding, ground slope, basement moisture (meter), and visible mold/mildew. Repair findings.",
       "specification": null,
-      "scope": "The entire dwelling envelope and grounds \u2014 roof, flashing, gutters, siding, foundation, basement/crawlspace, around plumbing penetrations, and visible interior surfaces.",
+      "scope": "The entire dwelling envelope and grounds — roof, flashing, gutters, siding, foundation, basement/crawlspace, around plumbing penetrations, and visible interior surfaces.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -995,9 +995,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Gutters drain water well away from the foundation \u2014 OR site has well-draining sandy soils verified per USDA classification.",
+      "summary": "Gutters drain water well away from the foundation — OR site has well-draining sandy soils verified per USDA classification.",
       "specification": null,
-      "scope": "Roof drainage system \u2014 gutters, downspouts, splash blocks, and the ground area where roof water terminates.",
+      "scope": "Roof drainage system — gutters, downspouts, splash blocks, and the ground area where roof water terminates.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -1016,7 +1016,7 @@
       "newConstructionOnly": true,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Grading slopes away from the home \u2014 or french drains are installed (new construction).",
+      "summary": "Grading slopes away from the home — or french drains are installed (new construction).",
       "specification": null,
       "scope": "Site grading and subsurface drainage in new construction projects.",
       "requirements": null,
@@ -1037,7 +1037,7 @@
       "newConstructionOnly": true,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "No newly installed ducts are panned in floor joists \u2014 they must be fully ducted to prevent unintended air paths.",
+      "summary": "No newly installed ducts are panned in floor joists — they must be fully ducted to prevent unintended air paths.",
       "specification": null,
       "scope": "Newly installed HVAC return-air ductwork in new construction.",
       "requirements": null,
@@ -1075,7 +1075,7 @@
       "appliesTo": [],
       "summary": "New shower/tub surrounds use ASTM D3273-certified wallboard, certified coating, or drywall-free construction.",
       "specification": null,
-      "scope": "Wall surfaces inside shower and bathtub surrounds \u2014 the wet zones behind tile, panels, or solid surface.",
+      "scope": "Wall surfaces inside shower and bathtub surrounds — the wet zones behind tile, panels, or solid surface.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -1091,9 +1091,9 @@
       "newConstructionOnly": false,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "All HVAC ducts are fully ducted \u2014 none panned in joists.",
+      "summary": "All HVAC ducts are fully ducted — none panned in joists.",
       "specification": null,
-      "scope": "All HVAC supply and return ductwork in the dwelling \u2014 new and existing.",
+      "scope": "All HVAC supply and return ductwork in the dwelling — new and existing.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -1169,7 +1169,7 @@
       "newConstructionOnly": true,
       "existingOnly": false,
       "appliesTo": [],
-      "summary": "Reduction in upfront embodied carbon below the 154 kg CO\u2082e/m\u00b2 baseline. Approved tools: Beam Estimator, EC3, PHPP (PH Ribbon). Alternative pathways available at Silver (no concrete, RECs, solar offset, small home).",
+      "summary": "Reduction in upfront embodied carbon below the 154 kg CO₂e/m² baseline. Approved tools: Beam Estimator, EC3, PHPP (PH Ribbon). Alternative pathways available at Silver (no concrete, RECs, solar offset, small home).",
       "specification": null,
       "scope": "Upfront embodied carbon (A1-A5 life-cycle stages) of new construction or major addition. Existing structure being kept in place is exempt by definition (zero new embodied carbon).",
       "requirements": null,
@@ -1210,7 +1210,7 @@
       "appliesTo": [],
       "summary": "Create written instructions documenting how to maintain the building, equipment, and finishes.",
       "specification": null,
-      "scope": "Written documentation of how to maintain the building, equipment, and finishes \u2014 handed off to the homeowner or tenant at project completion.",
+      "scope": "Written documentation of how to maintain the building, equipment, and finishes — handed off to the homeowner or tenant at project completion.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -1252,7 +1252,7 @@
       "appliesTo": [],
       "summary": "New wood products are FSC or SFI certified. No tropical wood.",
       "specification": null,
-      "scope": "All new wood products installed in the dwelling \u2014 framing, flooring, trim, cabinetry, decking, structural panels.",
+      "scope": "All new wood products installed in the dwelling — framing, flooring, trim, cabinetry, decking, structural panels.",
       "requirements": null,
       "documentation": null,
       "guidance": null,
@@ -1316,7 +1316,7 @@
       "slug": "electrified-living",
       "url": "https://standard.greenstarhomes.org/badges/electrified-living",
       "pillar": "energy",
-      "summary": "All major end uses \u2014 heating, cooling, hot water, cooking, drying \u2014 are electric."
+      "summary": "All major end uses — heating, cooling, hot water, cooking, drying — are electric."
     },
     {
       "name": "Healthier Home (Clean Living)",
@@ -1330,7 +1330,7 @@
       "slug": "accessibility",
       "url": "https://standard.greenstarhomes.org/badges/accessibility",
       "pillar": "materials",
-      "summary": "Universal design features \u2014 zero-step entries, wider doorways, accessible bathrooms \u2014 supporting aging in place."
+      "summary": "Universal design features — zero-step entries, wider doorways, accessible bathrooms — supporting aging in place."
     },
     {
       "name": "Reduced Electromagnetic Frequency (EMF)",
@@ -1351,7 +1351,7 @@
       "slug": "foam-free",
       "url": "https://standard.greenstarhomes.org/badges/foam-free",
       "pillar": "materials",
-      "summary": "Built without spray-foam or rigid-foam insulation \u2014 uses fiber, cellulose, mineral wool, or other low-impact alternatives."
+      "summary": "Built without spray-foam or rigid-foam insulation — uses fiber, cellulose, mineral wool, or other low-impact alternatives."
     },
     {
       "name": "Home Water Score",
@@ -1386,7 +1386,7 @@
       "slug": "stormwater-control",
       "url": "https://standard.greenstarhomes.org/badges/stormwater-control",
       "pillar": "moisture",
-      "summary": "Site retains, infiltrates, or treats stormwater on-site \u2014 rain gardens, permeable surfaces, cisterns."
+      "summary": "Site retains, infiltrates, or treats stormwater on-site — rain gardens, permeable surfaces, cisterns."
     },
     {
       "name": "Sustainable Materials",

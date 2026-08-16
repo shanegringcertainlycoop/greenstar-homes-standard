@@ -36,9 +36,21 @@ Inspector and certification by the Institute. Fees fund the nonprofit mission.
 ## Structure
 
 - [`levels.md`](levels.md) — the four certification levels
-- [`standard/`](standard/) — requirements, one file per pillar
+- [`standard/`](standard/) — one folder per pillar, **one file per requirement**
 - [`badges.md`](badges.md) — the optional achievement badges
 - [`standard.json`](standard.json) — machine-readable snapshot
+- [`CHANGELOG.md`](CHANGELOG.md) — release-level history of the standard
+
+## Change history
+
+Two levels of changelog:
+
+- **Overall**: [`CHANGELOG.md`](CHANGELOG.md) tracks versioned manual releases.
+- **Per credit**: every requirement is its own file, so its git history is its
+  complete changelog — click **History** on any requirement file, or follow the
+  "Change history" link at the bottom of each one.
+
+Regenerate the export from the live standard with `node scripts/export.mjs`.
 
 ## Program
 
