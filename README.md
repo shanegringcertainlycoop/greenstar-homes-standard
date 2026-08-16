@@ -44,6 +44,9 @@ Inspector and certification by the Institute. Fees fund the nonprofit mission.
 - [`CHANGELOG.md`](CHANGELOG.md) — release-level history of the standard
 - [`ADOPTERS.md`](ADOPTERS.md) — programs and projects building on the standard
 - [`CITATION.cff`](CITATION.cff) — how to cite the standard in research
+- [`GOVERNANCE.md`](GOVERNANCE.md) — how changes are reviewed and ratified *(draft)*
+- [`rfcs/`](rfcs/) — proposals for substantive changes *(draft process)*
+- [`ERRATA.md`](ERRATA.md) — fast-track policy for health/safety errors *(draft)*
 
 ## Change history
 

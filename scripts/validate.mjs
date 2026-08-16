@@ -44,7 +44,7 @@ for (const dir of await readdir('standard')) {
 ok('markdown tree matches standard.json (no missing or orphan requirement files)')
 
 // 3. core documents exist
-for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE.md', 'CHANGELOG.md', 'levels.md', 'badges.md']) {
+for (const f of ['README.md', 'CONTRIBUTING.md', 'LICENSE.md', 'CHANGELOG.md', 'GOVERNANCE.md', 'ERRATA.md', 'rfcs/README.md', 'rfcs/0000-template.md', 'levels.md', 'badges.md']) {
   if (!existsSync(f)) problems.push(`missing core document: ${f}`)
 }
 ok('core documents present')

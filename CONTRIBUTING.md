@@ -9,6 +9,12 @@ Open an issue. Useful issues name the requirement (file + heading) and say what
 is wrong, unclear, outdated, or missing — citations to codes, studies, or field
 experience make them stronger.
 
+## Substantive changes: write an RFC
+Changes that move the certifiable bar — new requirements, changed thresholds,
+level changes — start as an RFC rather than a direct edit. See
+[rfcs/README.md](rfcs/README.md). Health/safety errors in the published text
+get a fast track instead: see [ERRATA.md](ERRATA.md).
+
 ## Propose a change
 1. Fork this repository.
 2. Edit the relevant file under `standard/` (or `levels.md` / `badges.md`).
