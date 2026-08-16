@@ -1,0 +1,1399 @@
+{
+  "name": "GreenStar Homes Certification",
+  "version": "Manual v4",
+  "publisher": {
+    "name": "GreenHome Institute",
+    "url": "https://greenhomeinstitute.org",
+    "email": "info@greenhomeinstitute.org"
+  },
+  "reference": "https://standard.greenstarhomes.org",
+  "formats": {
+    "html": "https://standard.greenstarhomes.org/standard",
+    "text": "https://standard.greenstarhomes.org/llms-full.txt",
+    "json": "https://standard.greenstarhomes.org/standard.json"
+  },
+  "note": "The checklist and manual are open for anyone to use; certification and consultation carry a fee. Contact the GreenHome Institute about licensing and reuse.",
+  "levels": [
+    {
+      "order": 1,
+      "name": "Certified",
+      "slug": "certified",
+      "summary": "The entry GreenStar tier. Covers mandatory safety, water, energy, and material assessments that every certified project must complete."
+    },
+    {
+      "order": 2,
+      "name": "Silver",
+      "slug": "silver",
+      "summary": "Silver requires all Certified requirements plus tighter water/energy targets, improved filtration, basic ventilation upgrades, and documented occupant training."
+    },
+    {
+      "order": 3,
+      "name": "Gold",
+      "slug": "gold",
+      "summary": "Gold requires all Certified + Silver requirements, plus electrification of major appliances, balanced ventilation, in-home air quality sensing, and a 15% embodied-carbon reduction in new construction."
+    },
+    {
+      "order": 4,
+      "name": "Platinum",
+      "slug": "platinum",
+      "summary": "Platinum requires all lower-tier requirements plus full electrification, heat- or energy-recovery ventilation, humidity control, real-time water leak detection, solar/EV readiness, and a 30% embodied-carbon reduction in new construction."
+    }
+  ],
+  "pillars": [
+    {
+      "order": 1,
+      "name": "Energy & Climate Resilience",
+      "slug": "energy",
+      "summary": "Reduce a home's energy use, electrify its mechanical systems, and harden it against future climate risks. Covers Home Energy Score, heating/cooling, water heating, cooking, ventilation, and air-leakage targets."
+    },
+    {
+      "order": 2,
+      "name": "Indoor Air Quality & Health",
+      "slug": "indoor-air-quality",
+      "summary": "Keep occupants safe from combustion gases, radon, mold, and indoor pollutants. Covers gas/CO testing, MERV filtration, radon mitigation, kitchen/bath exhaust, and humidity control."
+    },
+    {
+      "order": 3,
+      "name": "Water Efficiency & Management",
+      "slug": "water",
+      "summary": "Cut indoor and outdoor water use without sacrificing function. Covers fixture flow rates, leak prevention, plumbing pressure testing, and (at Platinum) real-time leak detection."
+    },
+    {
+      "order": 4,
+      "name": "Moisture & Structural Integrity",
+      "slug": "moisture",
+      "summary": "Keep water out of the building envelope and shed it correctly at the site. Covers moisture assessments, gutter and grading systems, certified wet-area assemblies, and duct quality."
+    },
+    {
+      "order": 5,
+      "name": "Materials & Environmental Impact",
+      "slug": "materials",
+      "summary": "Lower the embodied-carbon footprint of new construction, avoid hazardous legacy materials, and source certified wood and floor finishes."
+    }
+  ],
+  "requirements": [
+    {
+      "title": "Climate Risk Assessment",
+      "slug": "climate-risk-assessment",
+      "url": "https://standard.greenstarhomes.org/requirements/climate-risk-assessment",
+      "pillar": "energy",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Determine the project's future climate risks using a climate-resource tool. Document and mitigate identified risks (stringency rises by tier).",
+      "specification": null,
+      "scope": "Site-specific climate risks over the project's expected lifetime (typically 30-60 years), identified using a recognized climate-projection tool.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "resilience",
+        "nature-friendly",
+        "walkability"
+      ]
+    },
+    {
+      "title": "Majority LED Lighting",
+      "slug": "majority-led-lighting",
+      "url": "https://standard.greenstarhomes.org/requirements/majority-led-lighting",
+      "pillar": "energy",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "A majority of fixtures use LED lamps.",
+      "specification": null,
+      "scope": "All interior and exterior lighting fixtures in the dwelling. Decorative-only fixtures (e.g. chandeliers used <1 hr/day) count toward the total.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-energy-ready",
+        "reduced-emf"
+      ]
+    },
+    {
+      "title": "Air Leakage Between Attached Units",
+      "slug": "attached-housing-air-leakage",
+      "url": "https://standard.greenstarhomes.org/requirements/attached-housing-air-leakage",
+      "pillar": "energy",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [
+        "attached-housing-only"
+      ],
+      "summary": "Reduce air movement between attached housing units. Stringency tightens at higher tiers (ACH50 thresholds differ for new construction vs. renovation).",
+      "specification": null,
+      "scope": "Air leakage between adjoining dwelling units in attached housing \u2014 duplex, townhouse, multifamily, ADU sharing a wall. Single-family detached homes are exempt.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "Reduce air leaks between attached units (no specific threshold)"
+        },
+        {
+          "level": "silver",
+          "summary": "0.3 ACH50 (new) / 0.4 (existing) between units"
+        },
+        {
+          "level": "gold",
+          "summary": "0.23 ACH50 (new) / 0.3 (renovation) between units"
+        },
+        {
+          "level": "platinum",
+          "summary": "0.15 ACH50 (new) / 0.23 (renovation) between units"
+        }
+      ],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Home Energy Performance",
+      "slug": "home-energy-score",
+      "url": "https://standard.greenstarhomes.org/requirements/home-energy-score",
+      "pillar": "energy",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "DOE Home Energy Score (existing) or modeled annual energy use (new construction). Alternative tools include HERS, PHPP, WUFI Passive, BeOpt, and 90.1.",
+      "specification": null,
+      "scope": "Whole-house energy performance, rated using DOE Home Energy Score or an equivalent recognized rating tool.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "silver",
+          "summary": "DOE Home Energy Score of 6"
+        },
+        {
+          "level": "gold",
+          "summary": "DOE Home Energy Score of 8"
+        },
+        {
+          "level": "platinum",
+          "summary": "DOE Home Energy Score of 10 (existing) \u2014 or 17.5 MBtu/year (new construction)"
+        }
+      ],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "foam-free"
+      ]
+    },
+    {
+      "title": "Properly Sized Cooling Equipment",
+      "slug": "properly-sized-cooling",
+      "url": "https://standard.greenstarhomes.org/requirements/properly-sized-cooling",
+      "pillar": "energy",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Cooling equipment sized per ACCA Manual J 8th Edition (or equivalent load calculation).",
+      "specification": null,
+      "scope": "All air-conditioning and heat-pump equipment installed for space cooling \u2014 central, mini-split, and packaged systems.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Refrigerant Charge Verification",
+      "slug": "refrigerant-charge-test",
+      "url": "https://standard.greenstarhomes.org/requirements/refrigerant-charge-test",
+      "pillar": "energy",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Refrigerant charge test completed on all AC and heat-pump equipment.",
+      "specification": null,
+      "scope": "All split-system AC and heat-pump equipment installed (factory-charged window/PTAC units excluded).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "All-Electric or Dual-Fuel Heating",
+      "slug": "heating-electric-or-dual-fuel",
+      "url": "https://standard.greenstarhomes.org/requirements/heating-electric-or-dual-fuel",
+      "pillar": "energy",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Space heating is all-electric or dual-fuel/hybrid. (At Platinum, all-electric only.)",
+      "specification": null,
+      "scope": "The primary space-heating system \u2014 central heat pump, ducted air handler, mini-split, or hydronic system.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "electrified-living",
+        "peak-load-shaver"
+      ]
+    },
+    {
+      "title": "All-Electric or Solar Water Heating",
+      "slug": "water-heating-electric-or-solar",
+      "url": "https://standard.greenstarhomes.org/requirements/water-heating-electric-or-solar",
+      "pillar": "energy",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Water heating is all-electric (heat pump preferred) or solar.",
+      "specification": null,
+      "scope": "The primary domestic hot-water heater serving the dwelling. Recirculation loops and point-of-use boosters are downstream of this and not constrained by this requirement.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "electrified-living",
+        "peak-load-shaver"
+      ]
+    },
+    {
+      "title": "All-Electric Cooking",
+      "slug": "cooking-all-electric",
+      "url": "https://standard.greenstarhomes.org/requirements/cooking-all-electric",
+      "pillar": "energy",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Cooking appliances are all-electric.",
+      "specification": null,
+      "scope": "All primary cooking appliances in the dwelling \u2014 cooktop, range, oven, wall oven, microwave-convection. Outdoor grills and supplementary appliances (toaster oven, slow cooker) are excluded.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "electrified-living"
+      ]
+    },
+    {
+      "title": "All-Electric Dryer",
+      "slug": "dryer-all-electric",
+      "url": "https://standard.greenstarhomes.org/requirements/dryer-all-electric",
+      "pillar": "energy",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Clothes dryer is all-electric (heat-pump dryer preferred).",
+      "specification": null,
+      "scope": "The primary clothes dryer in the dwelling.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "electrified-living",
+        "peak-load-shaver"
+      ]
+    },
+    {
+      "title": "Time-of-Use / Peak-Load Appliances",
+      "slug": "time-of-use-appliances",
+      "url": "https://standard.greenstarhomes.org/requirements/time-of-use-appliances",
+      "pillar": "energy",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Major appliances support time-of-use scheduling and/or peak-load avoidance.",
+      "specification": null,
+      "scope": "Major-load appliances: HVAC, water heater, EV charger, electric dryer, dishwasher, and (where present) battery storage system.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "resilience",
+        "peak-load-shaver"
+      ]
+    },
+    {
+      "title": "Solar- and EV-Ready Electrical Service",
+      "slug": "solar-ev-ready-breaker",
+      "url": "https://standard.greenstarhomes.org/requirements/solar-ev-ready-breaker",
+      "pillar": "energy",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "200-amp breaker box with capacity to add future solar PV and electric-vehicle chargers.",
+      "specification": null,
+      "scope": "The main electrical service panel and the conduit/wiring runs from panel to roof and panel to the EV-charging location.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "ghi-zero-energy-certified",
+        "ghi-zero-carbon-certified",
+        "ghi-zero-energy-ready",
+        "resilience",
+        "walkability",
+        "peak-load-shaver"
+      ]
+    },
+    {
+      "title": "HVAC Filter Rating",
+      "slug": "hvac-filter-rating",
+      "url": "https://standard.greenstarhomes.org/requirements/hvac-filter-rating",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Minimum MERV rating for filters on ducted heating/cooling systems.",
+      "specification": null,
+      "scope": "All HVAC return-air filters in ducted heating, cooling, and ventilation systems serving the dwelling.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "MERV 8 minimum"
+        },
+        {
+          "level": "silver",
+          "summary": "MERV 10 minimum"
+        },
+        {
+          "level": "gold",
+          "summary": "MERV 13 minimum"
+        },
+        {
+          "level": "platinum",
+          "summary": "MERV 16 minimum"
+        }
+      ],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Bathroom Exhaust Ventilation",
+      "slug": "bath-fan-exhaust",
+      "url": "https://standard.greenstarhomes.org/requirements/bath-fan-exhaust",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Bath fans exhaust to the outdoors (verified with a toilet-paper test). Silver and above must also test to \u2265 50 CFM per bathroom.",
+      "specification": null,
+      "scope": "Exhaust fans in every bathroom \u2014 full bath, half-bath, and powder rooms with a permanent water source.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Range Hood Tested at 100 CFM (or Electric Stove)",
+      "slug": "range-hood-or-electric-stove",
+      "url": "https://standard.greenstarhomes.org/requirements/range-hood-or-electric-stove",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Either install an electric stove, or have a range hood that is tested to vent at least 100 CFM to the outdoors.",
+      "specification": null,
+      "scope": "The kitchen cooking surface. Choose one of the two compliance paths \u2014 electric stove (eliminates combustion) or vented range hood (removes combustion products if gas is used).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Gas Leak Inspection",
+      "slug": "gas-leak-inspection",
+      "url": "https://standard.greenstarhomes.org/requirements/gas-leak-inspection",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "All gas appliances and piping inspected for leaks. No leaks permitted; repair or replace before certification.",
+      "specification": null,
+      "scope": "All natural-gas and propane plumbing inside the dwelling \u2014 supply piping, fittings, appliance connections, and shutoff valves.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Carbon Monoxide Testing of Combustion Appliances",
+      "slug": "combustion-co-test",
+      "url": "https://standard.greenstarhomes.org/requirements/combustion-co-test",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "CO leak test performed on all combustion-based appliances. Repair or replace any appliance that fails.",
+      "specification": null,
+      "scope": "All combustion-based appliances in the dwelling \u2014 furnace, boiler, water heater, gas range/oven, gas dryer, and gas fireplace.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Carbon Monoxide Detectors",
+      "slug": "co-detectors",
+      "url": "https://standard.greenstarhomes.org/requirements/co-detectors",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Hardwired CO detectors installed on every floor and near any fireplace.",
+      "specification": null,
+      "scope": "Carbon-monoxide detection throughout the dwelling.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Radon Testing and Mitigation",
+      "slug": "radon-mitigation",
+      "url": "https://standard.greenstarhomes.org/requirements/radon-mitigation",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Test for radon; no levels above PCL 4 permitted. Install a passive or active mitigation system if needed. All new construction and all EPA Zone 1 homes require a system.",
+      "specification": null,
+      "scope": "Indoor radon levels throughout the dwelling, with emphasis on the lowest livable floor.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Fireplace Safety",
+      "slug": "fireplace-safety",
+      "url": "https://standard.greenstarhomes.org/requirements/fireplace-safety",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "If a combustion fireplace exists: seal, vent, provide makeup air, and install a CO detector. (At Platinum, no combustion fireplaces indoors \u2014 electric only.)",
+      "specification": null,
+      "scope": "Any combustion-based fireplace (wood, gas, pellet) installed in the dwelling \u2014 both new and existing.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Whole-House Fresh Air Supply",
+      "slug": "whole-house-fresh-air",
+      "url": "https://standard.greenstarhomes.org/requirements/whole-house-fresh-air",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "A whole-house mechanical fresh-air supply system is provided.",
+      "specification": null,
+      "scope": "Continuous or intermittent mechanical ventilation that supplies outdoor air to the dwelling \u2014 separate from spot ventilation (bath fans, kitchen hood).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Sealed/Vented New Gas Appliances",
+      "slug": "sealed-vented-gas-appliances",
+      "url": "https://standard.greenstarhomes.org/requirements/sealed-vented-gas-appliances",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Any new gas appliances are sealed-combustion / vented to the outdoors \u2014 or the project goes all-electric.",
+      "specification": null,
+      "scope": "All NEW gas appliances installed in the dwelling \u2014 furnace, boiler, water heater, dryer, fireplace.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Kitchen Ventilation",
+      "slug": "kitchen-ventilation",
+      "url": "https://standard.greenstarhomes.org/requirements/kitchen-ventilation",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Kitchen has proper ventilation via range hood, outdoor air system, or air-quality monitor. (At Platinum, the range hood must detect PM2.5 and activate automatically.)",
+      "specification": null,
+      "scope": "Kitchen ventilation supplementing or extending the basic range hood requirement.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Balanced Fresh-Air System",
+      "slug": "balanced-fresh-air-system",
+      "url": "https://standard.greenstarhomes.org/requirements/balanced-fresh-air-system",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "A balanced (supply + exhaust) fresh-air system is installed and tested.",
+      "specification": null,
+      "scope": "Mechanical ventilation system delivering balanced supply and exhaust airflow \u2014 HRV (heat recovery ventilator) or ERV (energy recovery ventilator).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Indoor Air Quality Sensor",
+      "slug": "air-quality-sensor",
+      "url": "https://standard.greenstarhomes.org/requirements/air-quality-sensor",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "RESET-certified air-quality sensor installed in the main living area or ducts. (At Platinum, sensor measures CO\u2082, TVOC, humidity, temp, and PM2.5.)",
+      "specification": null,
+      "scope": "Continuous indoor air-quality monitoring in the dwelling.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home",
+        "reduced-emf"
+      ]
+    },
+    {
+      "title": "Ventilation with Heat/Energy Recovery or Smart Controls",
+      "slug": "ventilation-heat-recovery",
+      "url": "https://standard.greenstarhomes.org/requirements/ventilation-heat-recovery",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Ventilation includes energy-recovery / heat-recovery (ERV/HRV) or smart-control features.",
+      "specification": null,
+      "scope": "The whole-house ventilation system, building on the Silver and Gold ventilation requirements.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "Whole-Home Humidity Control",
+      "slug": "humidity-control",
+      "url": "https://standard.greenstarhomes.org/requirements/humidity-control",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Whole-home dehumidification / humidification provided where appropriate by climate (target 40\u201350\u00b0F dewpoint).",
+      "specification": null,
+      "scope": "Whole-home humidity management \u2014 dehumidification in cooling season, humidification in heating season, as appropriate to climate.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "healthier-home"
+      ]
+    },
+    {
+      "title": "No Indoor Combustion Fireplace",
+      "slug": "no-combustion-fireplace",
+      "url": "https://standard.greenstarhomes.org/requirements/no-combustion-fireplace",
+      "pillar": "indoor-air-quality",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "No combustion fireplaces present indoors. Electric fireplaces permitted.",
+      "specification": null,
+      "scope": "Any indoor combustion-based fireplace (wood, gas, pellet, ethanol).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Showerhead Flow Rate",
+      "slug": "showerhead-flow-rate",
+      "url": "https://standard.greenstarhomes.org/requirements/showerhead-flow-rate",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Average measured flow rate of all showerheads in the home. Alternative pathway: meet a Home Water Score threshold.",
+      "specification": null,
+      "scope": "All showerheads installed in the dwelling unit, including primary, guest, and accessory bathrooms. Hand-held wands count as part of the fixture they share a valve with. Bathtub spouts and tub-only fillers are excluded.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "\u2264 2.2 GPM average \u2014 or Home Water Score of 2"
+        },
+        {
+          "level": "silver",
+          "summary": "\u2264 2.0 GPM average \u2014 or Home Water Score of 3"
+        },
+        {
+          "level": "gold",
+          "summary": "\u2264 1.5 GPM average \u2014 or Home Water Score of 5"
+        },
+        {
+          "level": "platinum",
+          "summary": "\u2264 1.25 GPM average \u2014 or Home Water Score of 6"
+        }
+      ],
+      "countsTowardBadges": [
+        "zero-water-capable",
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Bathroom Aerator Flow Rate",
+      "slug": "bathroom-aerator-flow-rate",
+      "url": "https://standard.greenstarhomes.org/requirements/bathroom-aerator-flow-rate",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Average measured flow rate of all bathroom faucet aerators.",
+      "specification": null,
+      "scope": "Aerators on every bathroom lavatory (sink) faucet in the dwelling. Kitchen, utility, and laundry-sink aerators are excluded.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "\u2264 2.0 GPM average \u2014 or Home Water Score of 2"
+        },
+        {
+          "level": "silver",
+          "summary": "\u2264 1.75 GPM average \u2014 or Home Water Score of 3"
+        },
+        {
+          "level": "gold",
+          "summary": "\u2264 1.0 GPM average \u2014 or Home Water Score of 5"
+        },
+        {
+          "level": "platinum",
+          "summary": "\u2264 0.5 GPM average \u2014 or Home Water Score of 6"
+        }
+      ],
+      "countsTowardBadges": [
+        "zero-water-capable",
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Toilet Flush Volume",
+      "slug": "toilet-flush-volume",
+      "url": "https://standard.greenstarhomes.org/requirements/toilet-flush-volume",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Average flush volume across all toilets in the home.",
+      "specification": null,
+      "scope": "Every toilet installed in the dwelling unit, including dual-flush models. Bathtubs, urinals (residential only), and bidets are excluded.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "< 1.6 GPF average \u2014 or Home Water Score of 2"
+        },
+        {
+          "level": "silver",
+          "summary": "< 1.3 GPF average \u2014 or Home Water Score of 3"
+        },
+        {
+          "level": "gold",
+          "summary": "\u2264 1.0 GPF average \u2014 or Home Water Score of 5"
+        },
+        {
+          "level": "platinum",
+          "summary": "< 1.0 GPF average \u2014 or Home Water Score of 6"
+        }
+      ],
+      "countsTowardBadges": [
+        "zero-water-capable",
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Plumbing Leak & Pressure Test",
+      "slug": "plumbing-leak-pressure-test",
+      "url": "https://standard.greenstarhomes.org/requirements/plumbing-leak-pressure-test",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Pressure test the plumbing system; no leaks permitted. Documented via the LEED-format Water Pressure and Leak Verification Report.",
+      "specification": null,
+      "scope": "All cold- and hot-water supply piping inside the dwelling envelope, from the point of entry (meter or well pressure tank) through every fixture connection.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "zero-water-capable",
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Clothes Washer Leak Protection",
+      "slug": "washer-leak-protection",
+      "url": "https://standard.greenstarhomes.org/requirements/washer-leak-protection",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Use steel-braided supply hoses, OR install a drain pan under the clothes washer.",
+      "specification": null,
+      "scope": "Every clothes washer installation in the dwelling, including stacked or laundry-closet units.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Tank Water Heater Drain Pan",
+      "slug": "water-heater-drain-pan",
+      "url": "https://standard.greenstarhomes.org/requirements/water-heater-drain-pan",
+      "pillar": "water",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Install a drain pan under any tank water heater located in or above conditioned living space.",
+      "specification": null,
+      "scope": "Tank-style water heaters located in or above conditioned living space (e.g. utility closets on upper floors, attic installations). Garage and basement installations are excluded if a tank failure would not damage living space.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Cold-Water Pipe Insulation",
+      "slug": "cold-water-pipe-insulation",
+      "url": "https://standard.greenstarhomes.org/requirements/cold-water-pipe-insulation",
+      "pillar": "water",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Insulate cold-water pipes, or keep them out of unconditioned space.",
+      "specification": null,
+      "scope": "Cold-water supply lines running through any unconditioned space (attics, crawlspaces, exterior walls in cold climates, garages, vented soffits).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "zero-water-capable"
+      ]
+    },
+    {
+      "title": "Tap Water Filtration",
+      "slug": "tap-water-filtration",
+      "url": "https://standard.greenstarhomes.org/requirements/tap-water-filtration",
+      "pillar": "water",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Install tap-water filtration appropriate to local water-quality conditions.",
+      "specification": null,
+      "scope": "The primary drinking-water tap (typically the kitchen sink cold tap). Whole-house filtration is acceptable but not required.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "zero-water-capable"
+      ]
+    },
+    {
+      "title": "On-Demand Well-Water Softener",
+      "slug": "well-water-on-demand-softener",
+      "url": "https://standard.greenstarhomes.org/requirements/well-water-on-demand-softener",
+      "pillar": "water",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Where well water is the supply, use an on-demand softener.",
+      "specification": null,
+      "scope": "Dwellings on well water with measured hardness above 7 grains per gallon (gpg) or 120 mg/L as CaCO\u2083.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Advanced Hot Water Delivery Test",
+      "slug": "advanced-plumbing-test",
+      "url": "https://standard.greenstarhomes.org/requirements/advanced-plumbing-test",
+      "pillar": "water",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Hot-water delivery passes the advanced test: \u2264 0.6 gallons before delivery and +10\u00b0F temperature rise.",
+      "specification": null,
+      "scope": "Hot-water distribution from the water heater (or recirculation manifold) to the farthest hot-water fixture in the home.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Water Leak Detection & Real-Time Metering",
+      "slug": "water-leak-detection-metering",
+      "url": "https://standard.greenstarhomes.org/requirements/water-leak-detection-metering",
+      "pillar": "water",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Real-time water leak detection and metering system installed.",
+      "specification": null,
+      "scope": "Whole-home plumbing \u2014 the system must monitor the entire supply line for unusual flow patterns indicative of a leak.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "zero-water-capable",
+        "resilience",
+        "home-water-score"
+      ]
+    },
+    {
+      "title": "Moisture & Wall Water Leak Assessment",
+      "slug": "moisture-water-leak-assessment",
+      "url": "https://standard.greenstarhomes.org/requirements/moisture-water-leak-assessment",
+      "pillar": "moisture",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Inspect roof condition, flashing, gutters, siding, ground slope, basement moisture (meter), and visible mold/mildew. Repair findings.",
+      "specification": null,
+      "scope": "The entire dwelling envelope and grounds \u2014 roof, flashing, gutters, siding, foundation, basement/crawlspace, around plumbing penetrations, and visible interior surfaces.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "nature-friendly",
+        "stormwater-control"
+      ]
+    },
+    {
+      "title": "Functional Gutter System",
+      "slug": "gutter-system",
+      "url": "https://standard.greenstarhomes.org/requirements/gutter-system",
+      "pillar": "moisture",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Gutters drain water well away from the foundation \u2014 OR site has well-draining sandy soils verified per USDA classification.",
+      "specification": null,
+      "scope": "Roof drainage system \u2014 gutters, downspouts, splash blocks, and the ground area where roof water terminates.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "nature-friendly",
+        "stormwater-control"
+      ]
+    },
+    {
+      "title": "Site Grading or French Drains",
+      "slug": "grading-or-french-drains",
+      "url": "https://standard.greenstarhomes.org/requirements/grading-or-french-drains",
+      "pillar": "moisture",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": true,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Grading slopes away from the home \u2014 or french drains are installed (new construction).",
+      "specification": null,
+      "scope": "Site grading and subsurface drainage in new construction projects.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "nature-friendly",
+        "stormwater-control"
+      ]
+    },
+    {
+      "title": "No New Ducts Panned in Joists",
+      "slug": "no-new-ducts-panned-in-joists",
+      "url": "https://standard.greenstarhomes.org/requirements/no-new-ducts-panned-in-joists",
+      "pillar": "moisture",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": true,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "No newly installed ducts are panned in floor joists \u2014 they must be fully ducted to prevent unintended air paths.",
+      "specification": null,
+      "scope": "Newly installed HVAC return-air ductwork in new construction.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Moisture-Resistant Flooring in Wet Areas",
+      "slug": "moisture-resistant-flooring",
+      "url": "https://standard.greenstarhomes.org/requirements/moisture-resistant-flooring",
+      "pillar": "moisture",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Bathrooms, kitchens, main entryways, and laundry rooms use moisture-resistant flooring.",
+      "specification": null,
+      "scope": "Floor finishes in wet areas: bathrooms, kitchens, main entryways, and laundry rooms.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Certified Shower/Tub Surrounds",
+      "slug": "certified-shower-tub-surrounds",
+      "url": "https://standard.greenstarhomes.org/requirements/certified-shower-tub-surrounds",
+      "pillar": "moisture",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "New shower/tub surrounds use ASTM D3273-certified wallboard, certified coating, or drywall-free construction.",
+      "specification": null,
+      "scope": "Wall surfaces inside shower and bathtub surrounds \u2014 the wet zones behind tile, panels, or solid surface.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "All Ducts Fully Ducted",
+      "slug": "all-ducts-fully-ducted",
+      "url": "https://standard.greenstarhomes.org/requirements/all-ducts-fully-ducted",
+      "pillar": "moisture",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "All HVAC ducts are fully ducted \u2014 none panned in joists.",
+      "specification": null,
+      "scope": "All HVAC supply and return ductwork in the dwelling \u2014 new and existing.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": []
+    },
+    {
+      "title": "Lead Paint Assessment (Pre-1978 Homes)",
+      "slug": "lead-assessment",
+      "url": "https://standard.greenstarhomes.org/requirements/lead-assessment",
+      "pillar": "materials",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": true,
+      "appliesTo": [],
+      "summary": "Review and resolve any potential lead-paint issues. Document via the Lead Abatement acknowledgement template.",
+      "specification": null,
+      "scope": "Lead paint and lead in plumbing fittings in dwellings built before 1978 (the year the U.S. banned residential lead-based paint).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "sustainable-materials"
+      ]
+    },
+    {
+      "title": "Asbestos Mitigation",
+      "slug": "asbestos-mitigation",
+      "url": "https://standard.greenstarhomes.org/requirements/asbestos-mitigation",
+      "pillar": "materials",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": true,
+      "appliesTo": [],
+      "summary": "Mitigate any asbestos found, or document that none is present.",
+      "specification": null,
+      "scope": "Asbestos-containing materials in existing dwellings, typically built before the U.S. asbestos phase-out (1989-current, depending on product).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "sustainable-materials"
+      ]
+    },
+    {
+      "title": "Knob-and-Tube Wiring Removed",
+      "slug": "no-knob-and-tube",
+      "url": "https://standard.greenstarhomes.org/requirements/no-knob-and-tube",
+      "pillar": "materials",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": false,
+      "existingOnly": true,
+      "appliesTo": [],
+      "summary": "No knob-and-tube wiring remains active in the home.",
+      "specification": null,
+      "scope": "Knob-and-tube electrical wiring in existing dwellings (common in U.S. homes built 1880-1940).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "reduced-emf"
+      ]
+    },
+    {
+      "title": "Embodied Carbon Reduction",
+      "slug": "embodied-carbon-reduction",
+      "url": "https://standard.greenstarhomes.org/requirements/embodied-carbon-reduction",
+      "pillar": "materials",
+      "requiredAtLevel": "certified",
+      "newConstructionOnly": true,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Reduction in upfront embodied carbon below the 154 kg CO\u2082e/m\u00b2 baseline. Approved tools: Beam Estimator, EC3, PHPP (PH Ribbon). Alternative pathways available at Silver (no concrete, RECs, solar offset, small home).",
+      "specification": null,
+      "scope": "Upfront embodied carbon (A1-A5 life-cycle stages) of new construction or major addition. Existing structure being kept in place is exempt by definition (zero new embodied carbon).",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [
+        {
+          "level": "certified",
+          "summary": "Embodied-carbon evaluation required"
+        },
+        {
+          "level": "silver",
+          "summary": "10% reduction from baseline"
+        },
+        {
+          "level": "gold",
+          "summary": "15% reduction from baseline"
+        },
+        {
+          "level": "platinum",
+          "summary": "30% reduction from baseline"
+        }
+      ],
+      "countsTowardBadges": [
+        "ghi-zero-carbon-certified",
+        "foam-free",
+        "sustainable-materials"
+      ]
+    },
+    {
+      "title": "Building Maintenance Instructions",
+      "slug": "maintenance-instructions",
+      "url": "https://standard.greenstarhomes.org/requirements/maintenance-instructions",
+      "pillar": "materials",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Create written instructions documenting how to maintain the building, equipment, and finishes.",
+      "specification": null,
+      "scope": "Written documentation of how to maintain the building, equipment, and finishes \u2014 handed off to the homeowner or tenant at project completion.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "accessibility",
+        "resilience"
+      ]
+    },
+    {
+      "title": "Homeowner / Tenant Training",
+      "slug": "homeowner-training",
+      "url": "https://standard.greenstarhomes.org/requirements/homeowner-training",
+      "pillar": "materials",
+      "requiredAtLevel": "silver",
+      "newConstructionOnly": false,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Train the homeowner or tenant on how to operate and maintain the building.",
+      "specification": null,
+      "scope": "In-person walkthrough and training session with the homeowner or tenant at project handover.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "accessibility",
+        "resilience"
+      ]
+    },
+    {
+      "title": "Certified Wood (No Tropical Species)",
+      "slug": "certified-wood-no-tropical",
+      "url": "https://standard.greenstarhomes.org/requirements/certified-wood-no-tropical",
+      "pillar": "materials",
+      "requiredAtLevel": "gold",
+      "newConstructionOnly": true,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "New wood products are FSC or SFI certified. No tropical wood.",
+      "specification": null,
+      "scope": "All new wood products installed in the dwelling \u2014 framing, flooring, trim, cabinetry, decking, structural panels.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "sustainable-materials"
+      ]
+    },
+    {
+      "title": "Floorscore or Green Label Plus Carpet",
+      "slug": "floorscore-carpet",
+      "url": "https://standard.greenstarhomes.org/requirements/floorscore-carpet",
+      "pillar": "materials",
+      "requiredAtLevel": "platinum",
+      "newConstructionOnly": true,
+      "existingOnly": false,
+      "appliesTo": [],
+      "summary": "Any new carpet is Floorscore or Green Label Plus certified.",
+      "specification": null,
+      "scope": "Any newly installed carpet in the dwelling. Existing carpet that is being kept in place is exempt.",
+      "requirements": null,
+      "documentation": null,
+      "guidance": null,
+      "byLevel": [],
+      "countsTowardBadges": [
+        "sustainable-materials"
+      ]
+    }
+  ],
+  "badges": [
+    {
+      "name": "GHI Zero Energy Certified",
+      "slug": "ghi-zero-energy-certified",
+      "url": "https://standard.greenstarhomes.org/badges/ghi-zero-energy-certified",
+      "pillar": "energy",
+      "summary": "Home produces as much renewable energy on-site as it consumes annually."
+    },
+    {
+      "name": "GHI Zero Carbon Certified",
+      "slug": "ghi-zero-carbon-certified",
+      "url": "https://standard.greenstarhomes.org/badges/ghi-zero-carbon-certified",
+      "pillar": "energy",
+      "summary": "Net-zero operational carbon emissions, accounting for both energy use and grid mix."
+    },
+    {
+      "name": "GHI Zero Energy Ready Certified",
+      "slug": "ghi-zero-energy-ready",
+      "url": "https://standard.greenstarhomes.org/badges/ghi-zero-energy-ready",
+      "pillar": "energy",
+      "summary": "Home is built efficient and wired so a future solar PV installation can take it to net-zero energy."
+    },
+    {
+      "name": "Zero Water Capable",
+      "slug": "zero-water-capable",
+      "url": "https://standard.greenstarhomes.org/badges/zero-water-capable",
+      "pillar": "water",
+      "summary": "Home is plumbed and equipped to operate without municipal water inputs (rainwater + greywater + on-site treatment)."
+    },
+    {
+      "name": "Electrified Living",
+      "slug": "electrified-living",
+      "url": "https://standard.greenstarhomes.org/badges/electrified-living",
+      "pillar": "energy",
+      "summary": "All major end uses \u2014 heating, cooling, hot water, cooking, drying \u2014 are electric."
+    },
+    {
+      "name": "Healthier Home (Clean Living)",
+      "slug": "healthier-home",
+      "url": "https://standard.greenstarhomes.org/badges/healthier-home",
+      "pillar": "indoor-air-quality",
+      "summary": "Project goes beyond baseline IAQ requirements with low-emission materials, advanced filtration, and active monitoring."
+    },
+    {
+      "name": "Accessibility",
+      "slug": "accessibility",
+      "url": "https://standard.greenstarhomes.org/badges/accessibility",
+      "pillar": "materials",
+      "summary": "Universal design features \u2014 zero-step entries, wider doorways, accessible bathrooms \u2014 supporting aging in place."
+    },
+    {
+      "name": "Reduced Electromagnetic Frequency (EMF)",
+      "slug": "reduced-emf",
+      "url": "https://standard.greenstarhomes.org/badges/reduced-emf",
+      "pillar": "indoor-air-quality",
+      "summary": "Wiring, lighting, and wireless infrastructure designed to minimize EMF exposure for occupants."
+    },
+    {
+      "name": "Resilience",
+      "slug": "resilience",
+      "url": "https://standard.greenstarhomes.org/badges/resilience",
+      "pillar": "energy",
+      "summary": "Backup power, passive survivability, hardened envelope, and other features that keep the home livable during extreme events."
+    },
+    {
+      "name": "Foam-free",
+      "slug": "foam-free",
+      "url": "https://standard.greenstarhomes.org/badges/foam-free",
+      "pillar": "materials",
+      "summary": "Built without spray-foam or rigid-foam insulation \u2014 uses fiber, cellulose, mineral wool, or other low-impact alternatives."
+    },
+    {
+      "name": "Home Water Score",
+      "slug": "home-water-score",
+      "url": "https://standard.greenstarhomes.org/badges/home-water-score",
+      "pillar": "water",
+      "summary": "Project completes a formal Home Water Score assessment as supplemental water-performance documentation."
+    },
+    {
+      "name": "Nature-friendly",
+      "slug": "nature-friendly",
+      "url": "https://standard.greenstarhomes.org/badges/nature-friendly",
+      "pillar": "moisture",
+      "summary": "Site design supports pollinators, native ecology, dark skies, and habitat preservation."
+    },
+    {
+      "name": "Walkability",
+      "slug": "walkability",
+      "url": "https://standard.greenstarhomes.org/badges/walkability",
+      "pillar": "materials",
+      "summary": "Project sited where occupants can reach daily destinations on foot, bike, or transit."
+    },
+    {
+      "name": "Peak Load Shaver",
+      "slug": "peak-load-shaver",
+      "url": "https://standard.greenstarhomes.org/badges/peak-load-shaver",
+      "pillar": "energy",
+      "summary": "Smart controls, storage, and demand response coordinate the home with grid peak-load signals."
+    },
+    {
+      "name": "Storm Water Control",
+      "slug": "stormwater-control",
+      "url": "https://standard.greenstarhomes.org/badges/stormwater-control",
+      "pillar": "moisture",
+      "summary": "Site retains, infiltrates, or treats stormwater on-site \u2014 rain gardens, permeable surfaces, cisterns."
+    },
+    {
+      "name": "Sustainable Materials",
+      "slug": "sustainable-materials",
+      "url": "https://standard.greenstarhomes.org/badges/sustainable-materials",
+      "pillar": "materials",
+      "summary": "Materials are reclaimed, biobased, third-party certified, or otherwise selected for low environmental impact."
+    }
+  ]
+}
