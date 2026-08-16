@@ -1,0 +1,35 @@
+name: Requirement problem
+description: A requirement is wrong, outdated, or conflicts with codes or building science
+title: "[Problem] <requirement name>: <short summary>"
+labels: ["requirement-problem"]
+body:
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement
+      description: The requirement file this concerns (e.g. standard/02-indoor-air-quality/radon-mitigation.md)
+      placeholder: standard/…/….md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong
+      description: What is incorrect, outdated, or in conflict — and with what (code section, study, field experience)?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Citations, code references, measured results, or field experience. Practitioner experience counts.
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Health or safety implication (needs fast-track errata)
+        - Technical error
+        - Outdated reference
+    validations:
+      required: true

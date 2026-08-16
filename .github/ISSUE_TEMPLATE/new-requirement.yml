@@ -1,0 +1,33 @@
+name: New requirement proposal
+description: Propose adding a requirement or badge to the standard
+title: "[Proposal] <short name>"
+labels: ["proposal"]
+body:
+  - type: input
+    id: pillar
+    attributes:
+      label: Pillar
+      description: Which pillar does this belong to (energy, indoor-air-quality, water, moisture, materials)?
+    validations:
+      required: true
+  - type: input
+    id: level
+    attributes:
+      label: Level
+      description: At what level should it become required (Certified, Silver, Gold, Platinum) — or is it a badge?
+    validations:
+      required: true
+  - type: textarea
+    id: requirement
+    attributes:
+      label: The requirement
+      description: What must a project do, and how is it verified/documented by a GreenHome Inspector?
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Why it belongs in the standard
+      description: The health, efficiency, durability, or carbon case — with evidence. What does it cost, and who bears it?
+    validations:
+      required: true

@@ -1,5 +1,7 @@
 # GreenStar Homes Certification — The Open Standard
 
+![Version](https://img.shields.io/badge/standard-Manual%20v4-059669) ![License](https://img.shields.io/badge/license-CC%20BY--SA%204.0-2563eb) [![Validate standard](https://github.com/shanegringcertainlycoop/greenstar-homes-standard/actions/workflows/validate.yml/badge.svg)](https://github.com/shanegringcertainlycoop/greenstar-homes-standard/actions/workflows/validate.yml)
+
 This repository is the open, forkable text of the **GreenStar Homes Certification**
 standard (Manual v4), a residential green-building certification run by the
 [GreenHome Institute](https://greenhomeinstitute.org), a 501(c)(3) nonprofit.
@@ -40,6 +42,8 @@ Inspector and certification by the Institute. Fees fund the nonprofit mission.
 - [`badges.md`](badges.md) — the optional achievement badges
 - [`standard.json`](standard.json) — machine-readable snapshot
 - [`CHANGELOG.md`](CHANGELOG.md) — release-level history of the standard
+- [`ADOPTERS.md`](ADOPTERS.md) — programs and projects building on the standard
+- [`CITATION.cff`](CITATION.cff) — how to cite the standard in research
 
 ## Change history
 

@@ -1,0 +1,24 @@
+name: Clarity fix
+description: A requirement is confusing, ambiguous, or hard to apply in the field
+title: "[Clarity] <requirement name>: <short summary>"
+labels: ["clarity"]
+body:
+  - type: input
+    id: requirement
+    attributes:
+      label: Requirement
+      placeholder: standard/…/….md
+    validations:
+      required: true
+  - type: textarea
+    id: confusion
+    attributes:
+      label: What's unclear
+      description: What did you expect it to mean, and what else could it mean? Where did it bite you — plan review, inspection, homeowner conversation?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording (optional)
+      description: If you have better language, propose it — or open a PR directly.

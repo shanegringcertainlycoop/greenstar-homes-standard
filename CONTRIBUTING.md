@@ -24,6 +24,12 @@ accepted changes there, which republishes the site, the JSON, and this repo.
 A change is part of the certifiable standard only when the Institute publishes
 it in a versioned manual release.
 
+## Licensing of contributions
+By opening a pull request you affirm the contribution is your own work (or
+properly attributed) and that you license it under CC BY-SA 4.0, the same
+license as the rest of the standard. This keeps the standard cleanly
+reusable for everyone.
+
 ## Ground rules
 Be specific, be kind, argue from building science. The Institute has final say
 over what enters the certifiable standard.

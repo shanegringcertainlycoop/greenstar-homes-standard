@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Interpretation questions & general discussion
+    url: https://github.com/shanegringcertainlycoop/greenstar-homes-standard/discussions
+    about: Not sure how a requirement applies to your project? Ask in Discussions.
+  - name: Certification inquiries
+    url: https://greenhomeinstitute.org/green-building-certification-inquiry-form/
+    about: To certify a project, contact the GreenHome Institute directly.

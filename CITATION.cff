@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you reference the GreenStar Homes standard in research or policy work, please cite it as below."
+title: "GreenStar Homes Certification Standard"
+type: dataset
+version: "Manual v4"
+date-released: "2023-05-02"
+authors:
+  - name: "GreenHome Institute"
+    city: "Grand Rapids"
+    region: "MI"
+    country: "US"
+    website: "https://greenhomeinstitute.org"
+url: "https://standard.greenstarhomes.org"
+repository: "https://github.com/shanegringcertainlycoop/greenstar-homes-standard"
+license: CC-BY-SA-4.0
+keywords:
+  - green building
+  - residential certification
+  - energy efficiency
+  - indoor air quality
+  - sustainable housing
